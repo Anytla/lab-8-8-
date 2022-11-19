@@ -48,7 +48,7 @@ class Box<T> where T : IComparable<T>
 
         foreach (T t in Arr)
         {
-            if (t.CompareTo(max) > 0) //
+            if (t.CompareTo(max) > 0) // слідує за параметром, тобто після 0 до макс
             { max = t; }
         }
         newArr.Add(max);
@@ -61,7 +61,7 @@ class Box<T> where T : IComparable<T>
 
         foreach (T t in Arr)
         {
-            if (t.CompareTo(min) < 0)
+            if (t.CompareTo(min) < 0) // слідує перед 0 аж до мін
             { min = t; }
         }
         newArr.Add(min);
